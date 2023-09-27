@@ -1,0 +1,102 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-image: url('img/banner.png');
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Estilos para la navegación */
+nav {
+    background-color: #4285f4; /* Azul brillante de Google */
+    text-align: center;
+    padding: 20px 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4285f4; /* Azul brillante de Google */
+}
+
+a:hover {
+    background-color: #0b72e0; /* Cambia el color de fondo al pasar el mouse por encima */
+    color: #fff; /* Cambia el color del texto al pasar el mouse por encima */
+}
+
+/* Estilos para el contenido */
+#contenido {
+    padding: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #4285f4;
+    color: #fff;
+}
+
+/* Estilos para filas alternadas */
+table tr:nth-child(odd) {
+    background-color: #33dd5e; /* Gris claro para filas impares */
+}
+
+table tr:nth-child(even) {
+    background-color: #62c0ff; /* Blanco para filas pares */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    color: #333;
+    padding: 20px 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
