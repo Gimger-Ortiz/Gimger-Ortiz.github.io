@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Palíndromo</title>
+  
+</head>
+<body style="background-image: url(imagenes/fondo2.png); background-repeat: no-repeat; background-size: 1400px;">
+    <h1 style="background-color: chocolate; text-align: center;">Verificar Palíndromo</h1>
+    <p>¿Que es un palindromo? <br> <br>Palabra o expresión que es igual si se lee de izquierda a derecha que de derecha a izquierda.</p>
+    <form>
+        <label for="inputPalabra">Ingrese una palabra o frase:</label>
+        <input type="text" id="inputPalabra" required>
+        <button type="button" onclick="verificarPalindromo()">Verificar</button>
+       
+    </form>
+
+    <p>Resultado: <span id="resultado"></span></p>
+
+    <script>
+        function verificarPalindromo() {
+            const inputPalabra = document.getElementById("inputPalabra").value.toLowerCase();
+            const palabraSinEspacios = inputPalabra.replace(/\s/g, ""); // Eliminar espacios
+            const palabraAlReves = palabraSinEspacios.split("").reverse().join("");
+
+            if (palabraSinEspacios === palabraAlReves) {
+                document.getElementById("resultado").textContent = "Es un palíndromo.";
+            } else {
+                document.getElementById("resultado").textContent = "No es un palíndromo.";
+            }
+        }
+
+        function borrarDatos() {
+            document.getElementById("inputPalabra").value = "";
+            document.getElementById("resultado").textContent = "";
+        }
+    </script>
+</body>
+</html>
+
+
+

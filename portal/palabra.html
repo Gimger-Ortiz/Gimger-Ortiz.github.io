@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palabra al Revés</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url(imagenes/fondo2.png); background-repeat: no-repeat; background-size: 1400px;">
+    <h1 style="background-color: chocolate; text-align: center;">Palabra al Revés</h1>
+
+    <form>
+        <label for="inputPalabra">Ingrese una palabra:</label>
+        <input type="text" id="inputPalabra" required>
+        <button type="button" onclick="mostrarPalabraAlReves()">Enter</button>
+       
+    </form>
+
+    <p>Palabra al revés: <span id="palabraAlReves"></span></p>
+
+    <script>
+        function mostrarPalabraAlReves() {
+            const inputPalabra = document.getElementById("inputPalabra").value;
+            const palabraAlReves = reverseString(inputPalabra);
+            document.getElementById("palabraAlReves").textContent = palabraAlReves;
+        }
+
+        function reverseString(str) {
+            return str.split('').reverse().join('');
+        }
+
+        function borrarDatos() {
+            document.getElementById("inputPalabra").value = "";
+            document.getElementById("palabraAlReves").textContent = "";
+        }
+    </script>
+</body>
+</html>
+
+
+

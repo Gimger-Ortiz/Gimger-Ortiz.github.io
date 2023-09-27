@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprimir Números Impares en un Rango</title>
+</head>
+<body style="background-image: url(imagenes/fondo2.png); background-repeat: no-repeat; background-size: 1400px;">
+    <h1 style="text-align: center; background-color: chocolate;">Imprimir números impares en un rango dado</h1>
+
+    <form onsubmit="return false;">
+        <label for="inicio">Valor de A:</label>
+        <input type="number" id="inicio" name="inicio" required>
+        
+        <label for="fin">Valor de B:</label>
+        <input type="number" id="fin" name="fin" required> <br>
+        <br>
+
+        <button onclick="imprimirImpares()">Imprimir</button> <br>
+       
+    </form>
+
+    <output id="resultado"></output>
+
+    <script>
+        function imprimirImpares() {
+            const inicio = parseInt(document.getElementById("inicio").value);
+            const fin = parseInt(document.getElementById("fin").value);
+
+            if (isNaN(inicio) || isNaN(fin)) {
+                alert("Ingrese los numeros para validar los calculos");
+                return;
+            }
+
+            let impares = [];
+            for (let i = inicio; i <= fin; i++) {
+                if (i % 2 !== 0) {
+                    impares.push(i);
+                }
+            }
+                
+            const resultado = impares.join('\n');  
+            document.getElementById("resultado").textContent = `Números impares en el rango:\n${resultado}`;
+        }
+
+    </script>
+</body>
+</html>

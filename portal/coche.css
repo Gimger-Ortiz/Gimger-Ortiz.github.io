@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.road {
+    background: #808080;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.car {
+    background: #ff0000;
+    width: 50px;
+    height: 25px;
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+    border-radius: 10px;
+    animation: moveCar 4s linear infinite;
+}
+
+@keyframes moveCar {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secuencia de Fibonacci</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url(imagenes/fondo2.png); background-repeat: no-repeat; background-size: 1400px;">
+    <h1 style="background-color: chocolate; text-align: center;">Secuencia de Fibonacci</h1>
+    <p >¿Qué es la secuencia Fibonacci y cómo funciona?<br> <br>
+        Se trata de una secuencia infinita de números naturales; <br>a partir del 0 y el 1, 
+        se van sumando a pares, de manera que <br> cada número es igual a la suma de sus dos anteriores.
+    </p>
+    <form>
+        <label for="numeroElementos">Número de Elementos:</label>
+        <input type="number" id="numeroElementos" required>
+        <button type="button" onclick="generarFibonacci()">Generar</button>
+        <button type="button" onclick="borrarDatos()">Borrar Datos</button>
+    </form>
+
+    <p>Secuencia Resultada: <span id="resultado"></span></p>
+
+    <script>
+        function generarFibonacci() {
+            const numeroElementos = parseInt(document.getElementById("numeroElementos").value);
+
+            if (isNaN(numeroElementos) || numeroElementos <= 0) {
+                alert("Por favor, ingrese un número válido mayor que cero.");
+                return;
+            }
+
+            let fibonacci = [0, 1];
+
+            for (let i = 2; i < numeroElementos; i++) {
+                const siguienteNumero = fibonacci[i - 1] + fibonacci[i - 2];
+                fibonacci.push(siguienteNumero);
+            }
+
+            document.getElementById("resultado").textContent = fibonacci.join("\n");
+        }
+        function borrarDatos() {
+            document.getElementById("numeroElementos").value = "";
+            document.getElementById("resultado").textContent = "";
+        }
+    </script>
+</body>
+</html>
