@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingernieria en Telematica - Programación Web</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+    <style>
+        .sidebar {
+            height: 100vh;
+            position: fixed;
+        }
+
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        /* Estilos para el menú lateral */
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background-color: #f8f9fa;
+}
+
+#sidebar .nav-link {
+    color: #495057;
+}
+
+#sidebar .nav-link:hover {
+    background-color: #e9ecef;
+}
+
+#sidebar .nav-link.active {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Estilos para el contenido */
+.content {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el encabezado y el pie de página */
+.header, .footer {
+    background-color: #007bff;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para los enlaces en el contenido */
+.content a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Menú lateral -->
+            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+                <div class="position-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                Inicio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">
+                                Galería de Imágenes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">
+                                Blog
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="videos.html">
+                                Galería de Videos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="play.html">
+                                Playlist
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Dashboard.html">
+                                Dashboard
+                            </a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </nav>
+            <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4 content">
+              <h1>Bienvenido a Ingeniería en Telemática - Programación Web</h1>
+              <p>Aquí encontrarás información sobre Recetas de comida, galerias, degustar de musica entre otras cosas.</p>
+              <!-- Aquí puedes agregar más detalles sobre la carrera y la clase -->
+          
+              <!-- Sección de Datos Personales -->
+              <div class="row mt-5">
+                  <div class="col-md-6">
+                      <h2>Datos Personales</h2>
+                      <p>Nombre: Gimger Enrique Ortiz</p> 
+
+                      <ul class="list-unstyled">
+                        <li><a href="mailto:gimgerortiz500@gmail.com"><i class="fa fa-google fa-2x" aria-hidden="true"></i> Correo Electrónico</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100012034899548&locale=es_LA"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i> Facebook</a></li>
+                        <li><a href="https://gimger-2002.neocities.org/curriculum/"><i class="fa fa-vcard fa-2x" aria-hidden="true"></i> Mi CV</a></li>
+                        <li></li>
+                    
+                      </ul>
+                   
+                      <p>Teléfono: +505 8791 5335</p>
+                      <!-- Puedes agregar más detalles según tus necesidades -->
+                  </div>
+                  <div class="col-md-6">
+                      <!-- Imagen de Perfil -->
+                      <img width="400" height="400" ima src="img/WhatsApp Image 2023-09-05 at 3.03.30 PM.jpeg" alt="Tu Imagen de Perfil" class="img-fluid rounded-circle">
+                  </div>
+              </div>
+          </main>
+           
+        </div>
+    
+    </div>
+    <!-- Bootstrap JS y Popper.js (requerido para algunos componentes de Bootstrap) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js" integrity="sha384-b2b0iqV2z1OQ1Kq2zcpN7r/A3o5I0IhC+w3ZqHpuC0kkQeFeU6O8PuLikfyLv0c" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+

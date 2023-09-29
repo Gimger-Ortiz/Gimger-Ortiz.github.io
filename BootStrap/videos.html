@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Lista de videos</title>
+    <!-- Incluir librerias bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="videos.css">
+
+</head>
+<body>
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">About</h4>
+                        <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Contact</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                            <li><a href="#" class="text-white">Like on Facebook</a></li>
+                            <li><a href="#" class="text-white">Email me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                    <strong>Album</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light" style="color:rgb(255, 255, 255); background-size: 40px;"><strong>Album de videos</strong></h1>
+                    <p class="lead text-muted"><strong>Portal Informativo de Programacion</strong></p>
+                    <p>
+                        <a href="#" class="btn btn-primary my-2">Main call to action</a>
+                        <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <!-- Embeber video de YouTube -->
+                            <!-- <iframe width="100%" height="225" src="videos/¿Qué es HTML_ bien explicado(720P_HD).mp4" title="Video 1"></iframe> -->
+                            <iframe width="100%" height="225" src="videos/¿Qué es HTML_ bien explicado(720P_HD).mp4" title="Video 1"></iframe>
+
+                            <div class="card-body">
+                                <h5 class="card-title">HTML</h5>
+                                <!-- Descripción del video -->
+                                <p class="card-text">¿Qué es HTML?</p>
+                                <!-- Mención al autor con enlace a su canal -->
+                                <p class="card-text">Por <a href="https://youtube.com/@BitechStudio?si=2YS2zHjHsBLcY42z">BitechStudio</a></p>
+                                <!-- Modificar el botón View para redireccionar a videos relacionados -->
+                                <a href="https://www.youtube.com/watch?v=GnPALhDSleI" class="btn btn-sm btn-outline-secondary">Videos Relacionados</a>
+                                
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                          <!-- Embeber video de YouTube -->
+                          <iframe width="100%" height="225" src="videos/¿Qué es Java_ En 3 minutos(720P_60FPS).mp4" title="Video 1"></iframe>
+
+                          <div class="card-body">
+                              <h5 class="card-title">JAVA</h5>
+                              <!-- Descripción del video -->
+                              <p class="card-text">¿Qué es Java?</p>
+                              <!-- Mención al autor con enlace a su canal -->
+                              <p class="card-text">Por <a href="https://youtube.com/@BitechStudio?si=2YS2zHjHsBLcY42z">BitechStudio</a></p>
+                              <!-- Modificar el botón View para redireccionar a videos relacionados -->
+                              <a href="https://www.youtube.com/watch?v=hPbvq7oe7dI" class="btn btn-sm btn-outline-secondary">Videos Relacionados</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="card shadow-sm">
+                        <!-- Embeber video de YouTube -->
+                        <iframe width="100%" height="225" src="videos/video3.mp4" title="Video 1"></iframe>
+
+                        <div class="card-body">
+                            <h5 class="card-title">SQL</h5>
+                            <!-- Descripción del video -->
+                            <p class="card-text">Consep de SQL</p>
+                            <!-- Mención al autor con enlace a su canal -->
+                            <p class="card-text">Por <a href="https://www.youtube.com/@A2CapacitacionExcel">A2CapacitacionExcel</a></p>
+                            <!-- Modificar el botón View para redireccionar a videos relacionados -->
+                            <a href="https://www.youtube.com/watch?v=8XnWmSJFMVk" class="btn btn-sm btn-outline-secondary">Videos Relacionados</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                  <div class="card shadow-sm">
+                      <!-- Embeber video de YouTube -->
+                      <iframe width="100%" height="225" src="videos/video4.mp4" title="Video 1"></iframe>
+
+                      <div class="card-body">
+                          <h5 class="card-title">REDES</h5>
+                          <!-- Descripción del video -->
+                          <p class="card-text">Soporte de redes de la informacion</p>
+                          <!-- Mención al autor con enlace a su canal -->
+                          <p class="card-text">Por <a href="https://www.youtube.com/@Seaccna">Seaccna</a></p>
+                          <!-- Modificar el botón View para redireccionar a videos relacionados -->
+                          <a href="https://www.youtube.com/watch?v=4NZNF0Nx2wQ" class="btn btn-sm btn-outline-secondary">Videos Relacionados</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                    <!-- Embeber video de YouTube -->
+                    <iframe width="100%" height="225" src="videos/video5.mp4" title="Video 1"></iframe>
+
+                    <div class="card-body">
+                        <h5 class="card-title">PACKET TRACER</h5>
+                        <!-- Descripción del video -->
+                        <p class="card-text">Crear y configurar una red LAN en cisco packet tracer</p>
+                        <!-- Mención al autor con enlace a su canal -->
+                        <p class="card-text">Por <a href="https://www.youtube.com/@iniciong4375">iniciong4375</a></p>
+                        <!-- Modificar el botón View para redireccionar a videos relacionados -->
+                        <a href="https://www.youtube.com/watch?v=01STOQeAMpc" class="btn btn-sm btn-outline-secondary">Videos Relacionados</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                  <!-- Embeber video de YouTube -->
+                  <iframe width="100%" height="225" src="videos/video7.mp4" title="Video 1"></iframe>
+
+                  <div class="card-body">
+                      <h5 class="card-title">WEB</h5>
+                      <!-- Descripción del video -->
+                      <p class="card-text">Crear y configurar un servidor WEB con ubuntu server</p>
+                      <!-- Mención al autor con enlace a su canal -->
+                      <p class="card-text">Por <a href="https://www.youtube.com/@hackwise">hackwise</a></p>
+                      <!-- Modificar el botón View para redireccionar a videos relacionados -->
+                      <a href="https://www.youtube.com/watch?v=oGyVO37D4QI&list=PLXXiznRYETLeQ2-NJEV-tjzMUfLp7W8nZ" class="btn btn-sm btn-outline-secondary">Videos Relacionados</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+                <!-- Embeber video de YouTube -->
+                <iframe width="100%" height="225" src="videos/video8.mp4" title="Video 1"></iframe>
+
+                <div class="card-body">
+                    <h5 class="card-title">GNS3</h5>
+                    <!-- Descripción del video -->
+                    <p class="card-text">Configuraciones basica para GNS3</p>
+                    <!-- Mención al autor con enlace a su canal -->
+                    <p class="card-text">Por <a href="https://www.youtube.com/@EscueladeRedes">Escuela de Redes</a></p>
+                    <!-- Modificar el botón View para redireccionar a videos relacionados -->
+                    <a href="https://www.youtube.com/watch?v=1o2HeGEOEcQ&list=PLoqM5eIpDpUHVK_tqBKJToj2sDKxJ2iJt" class="btn btn-sm btn-outline-secondary">Videos Relacionados</a>
+                </div>
+            </div>
+        </div>
+                    <!-- Repetir este bloque para cada video (8 en total) -->
+
+                    <div class="col">
+                        <!-- Contenido del siguiente video -->
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+    </main>
+   
+      
+
+    <footer class="text-muted py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#">Back to top</a>
+            </p>
+            <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+            <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="/docs/5.2/getting-started/introduction/">getting started guide</a>.</p>
+        </div>
+    </footer>
+
+    <!-- Agregar enlaces a las librerías de Bootstrap y FontAwesome aquí si no están cargadas -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
