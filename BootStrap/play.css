@@ -1,0 +1,83 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+.site-header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+}
+
+.site-header nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.site-header nav a:hover {
+    color: #ffc107;
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+    padding: 2rem;
+}
+
+/* Estilos para el pie de página */
+.site-footer {
+    background-color: #f8f9fa;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.site-footer a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+    color: #0056b3;
+}
+/* Estilos para el reproductor de audio */
+audio {
+    width: 100%;
+  }
+  
+  /* Estilos para el contenedor del audio, información del artista y título, y la imagen */
+  .audio-container {
+    width: 80%;
+    height: 300px;
+    border-radius: 21px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .audio-info {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .audio-info p {
+    margin: 10px 0;
+  }
+  
+  .audio-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px;
+  }
+  
+  /* Estilos adicionales si deseas personalizar el fondo o los colores de texto */
+  body {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  

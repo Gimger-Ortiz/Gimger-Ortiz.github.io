@@ -1,0 +1,20 @@
+/* Estilos para la barra de navegación */
+.letras ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.letras li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.letras a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+
+
