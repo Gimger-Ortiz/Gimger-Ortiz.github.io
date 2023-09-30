@@ -1,0 +1,40 @@
+/* Estilos para las filas de la tabla */
+tbody tr.stock-red {
+    background-color: red;
+    color: white;
+}
+
+tbody tr.stock-green {
+    background-color: green;
+    color: white;
+}
+
+
+/* Estilos para las columnas o encabezados de la tabla */
+thead th {
+    background-color: #343a40; /* Fondo gris oscuro */
+    color: white; /* Texto blanco */
+    font-weight: bold; /* Texto en negrita */
+    padding: 10px; /* Espaciado interior */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Estilos adicionales para celdas específicas si es necesario */
+thead th.stock-header {
+    background-color: #343a40; /* Fondo gris oscuro */
+    color: white; /* Texto blanco */
+    font-weight: bold; /* Texto en negrita */
+    padding: 10px; /* Espaciado interior */
+    text-align: center; /* Centrar el texto */
+}
+
+/* Estilos para las filas de la tabla */
+tbody tr.stock-red {
+    background-color: red;
+    color: white;
+}
+
+tbody tr.stock-green {
+    background-color: green;
+    color: white;
+}

@@ -1,0 +1,47 @@
+
+
+    /* Estilos para el encabezado */
+    header {
+        background-color: #343a40;
+    }
+
+    .navbar-brand {
+        font-size: 24px;
+        color: #ffffff;
+    }
+
+    .navbar-toggler-icon {
+        background-color: #ffffff;
+    }
+
+    /* Estilos para la sección principal */
+    .lead {
+        font-size: 18px;
+    }
+
+    /* Estilos para la sección de álbum */
+    .album {
+        background-color: #f8f9fa;
+    }
+
+    .card {
+        border: none;
+        border-radius: 15px;
+    }
+
+    .card-text {
+        font-size: 16px;
+    }
+
+    .btn-outline-secondary {
+        color: #6c757d;
+        border-color: #6c757d;
+    }
+
+    /* Estilos para el pie de página */
+    footer {
+        background-color: #343a40;
+        color: #ffffff;
+    }
+
+
